@@ -340,6 +340,12 @@ p  { margin: 0 0 1rem; }
 .cert-grid figcaption { text-align:center; font-size:.85rem; color: var(--muted); margin-top:10px; }
 @media (max-width: 900px){ .cert-grid { grid-template-columns: 1fr; max-width:420px; margin-inline:auto; } }
 
+/* Single featured certificate */
+.cert-single { max-width: 680px; margin-inline:auto; }
+.cert-single figure { margin:0; background:#fff; border:1px solid var(--line); border-radius: var(--r-md); padding:16px; box-shadow: var(--shadow-md); }
+.cert-single img { width:100%; height:auto; border-radius:6px; display:block; }
+.cert-single figcaption { text-align:center; font-size:.9rem; color: var(--muted); margin-top:14px; }
+
 /* Infographics (tall portrait awareness graphics) — large & readable */
 .infographics { display:grid; grid-template-columns: 1fr; gap: 36px; max-width: 760px; margin-inline:auto; }
 .infographics figure { margin:0; }
