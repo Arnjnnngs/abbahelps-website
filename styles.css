@@ -304,7 +304,7 @@ p  { margin: 0 0 1rem; }
    ===================================================================== */
 
 /* Real logo in brand */
-.brand-logo { height: 52px; width: auto; display: block; }
+.brand-logo { height: 60px; width: auto; display: block; }
 .brand-text { display:flex; flex-direction:column; line-height:1.05; }
 .site-footer .brand-logo { height: 56px; }
 @media (max-width: 480px){ .brand-logo { height: 44px; } }
