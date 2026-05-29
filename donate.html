@@ -39,25 +39,20 @@
 
 <section class="section">
   <div class="container">
-    <div class="donate-frame-wrap reveal">
-      <iframe id="dpFrame" class="donate-frame" src="https://form-renderer-app.donorperfect.io/give/abba-helps/abba-helps-donate" title="ABBA Helps secure donation form"></iframe>
+    <div class="cta-band reveal" style="max-width:860px;margin:0 auto">
+      <div class="inner" style="grid-template-columns:1fr;text-align:center">
+        <div>
+          <p class="eyebrow" style="color:rgba(255,255,255,.85)">Secure &amp; Tax-Deductible</p>
+          <h2>For just <span class="price">$45</span> you can become a lifeline.</h2>
+          <p>Your gift provides safe shelter, trauma-informed care, medical support, and renewed hope for pregnant survivors, young mothers, and their children. Give a one-time gift or become a monthly partner for as little as $5/month.</p>
+          <div class="btn-row" style="justify-content:center;margin-top:26px">
+            <a class="btn btn--gold btn--lg" href="https://form-renderer-app.donorperfect.io/give/abba-helps/abba-helps-donate" target="_blank" rel="noopener">Give securely now</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <script>
-    (function(){
-      var f=document.getElementById('dpFrame');
-      if(!f) return;
-      function setH(h){ h=parseInt(h,10); if(h && h>500 && h<12000){ f.style.height=(h+40)+'px'; } }
-      window.addEventListener('message', function(e){
-        var d=e.data;
-        if(typeof d==='number'){ setH(d); return; }
-        if(typeof d==='string'){ try{ d=JSON.parse(d); }catch(_){ setH(d); return; } }
-        if(d && typeof d==='object'){ setH(d.height||d.frameHeight||d.scrollHeight||(d.payload&&d.payload.height)); }
-      });
-    })();
-    </script>
-    <p class="center" style="max-width:620px;margin:22px auto 0;color:var(--muted);font-size:.9rem">
-      Trouble seeing the form? <a href="https://form-renderer-app.donorperfect.io/give/abba-helps/abba-helps-donate" target="_blank" rel="noopener">Open the secure donation page in a new tab</a>.
-      Payments are processed securely by DonorPerfect &mdash; ABBA Helps never sees your full card number.
+    <p class="center" style="max-width:620px;margin:20px auto 0;color:var(--muted);font-size:.9rem">
+      The secure donation form opens in a new tab. Payments are processed by DonorPerfect &mdash; ABBA Helps never sees your full card number.
     </p>
   </div>
 </section>
